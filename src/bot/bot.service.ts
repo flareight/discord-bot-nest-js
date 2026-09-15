@@ -19,9 +19,9 @@ export class BotService implements OnModuleInit {
     private readonly configService: ConfigService;
     private readonly commandsService: CommandsService;
     private readonly startupMessages = [
-        'Бот запущен!',
-        'Всем привет!',
-        'Бот готов!'
+        'Мяу!',
+        'Мур мяу!',
+        'Мяу привет!'
     ];
     
     constructor(configService: ConfigService, commandsService: CommandsService) {

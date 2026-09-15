@@ -1,0 +1,13 @@
+// use prisma-8
+// Contract inferred from the live database schema. Edit as needed, then run `prisma contract emit`.
+
+model BotLogs {
+  id        Int          @id(map: "bot_logs_pkey") @default(autoincrement())
+  userId    VarChar(30)  @map("user_id")
+  username  VarChar(50)
+  command   VarChar(50)
+  args      VarChar(50)
+  createdAt Timestamptz? @default(now()) @map("created_at")
+
+  @@map("bot_logs")
+}

@@ -15,7 +15,7 @@ export class CommandsService {
     private readonly configService: ConfigService;
     private readonly commands = [
         {
-            name: 'хелп',
+            name: 'help',
             execute: ShowHelp,
             about: 'Показывает список всех доступных команд'
         },
